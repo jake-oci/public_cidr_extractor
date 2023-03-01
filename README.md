@@ -4,8 +4,10 @@
 ### cidr_extractor script
 If you want to get a general understanding of what CIDR ranges are being used for a specific OCI service using the Oracle Service Network, this is the script that will do it. Most of the output from the script is so you understand what is being run. The ***Unique CIDR BLOCKS matched with OCI JSON file*** output at the end of the file is the data you are most likely interested in.
 
+
 ### Usage:
 #python3 cidr_extractor.py --list OCI_DNS_NAME_1 OCI_DNS_NAME_2 OCI_DNS_NAME_3
+
 
 
 ### What does the script do?
@@ -16,8 +18,10 @@ If you want to get a general understanding of what CIDR ranges are being used fo
 *Compares the IP addresses it collected with the CIDR ranges in the JSON file
 
 
+
 ### Example Usage for JMS in Ashburn:
 python3 4_cleanup.py --list auth.us-ashburn-1.oraclecloud.com telemetry-ingestion.us-ashburn-1.oraclecloud.com management-agent.us-ashburn-1.oci.oraclecloud.com javamanagement-ingest.us-ashburn-1.oci.oraclecloud.com javamanagement.us-ashburn-1.oci.oraclecloud.com ingestion.logging.us-ashburn-1.oci.oraclecloud.com objectstorage.us-ashburn-1.oraclecloud.com
+
 
 ### Example Output:
 
