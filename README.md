@@ -1,4 +1,4 @@
-### This script was Authored by Jake Bloom, OCI Principal Network Solution Architect. No Liability from this script will be assumed, and support is best effort.
+***This script was Authored by Jake Bloom, OCI Principal Network Solution Architect. No Liability from this script will be assumed, and support is best effort.
 
 
 ## cidr_extractor script
