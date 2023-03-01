@@ -1,5 +1,5 @@
 ## cidr_extractor script
-If you want to get a general understanding of what CIDR ranges are being used for a specific OCI service using the Oracle Service Network, this is the script that will do it.
+If you want to get a general understanding of what CIDR ranges are being used for a specific OCI service using the Oracle Service Network, this is the script that will do it. Most of the output from the script is so you understand what is being run. The ***Unique CIDR BLOCKS matched with OCI JSON file*** output at the end of the file is the data you are most likely interested in.
 
 ### Usage:
 #python3 cidr_extractor.py --list OCI_DNS_NAME_1 OCI_DNS_NAME_2 OCI_DNS_NAME_3
