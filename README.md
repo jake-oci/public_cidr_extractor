@@ -12,7 +12,7 @@ If you want to get a general understanding of what CIDR ranges are being used fo
 ## Example Usage for JMS in Ashburn:
 python3 4_cleanup.py --list auth.us-ashburn-1.oraclecloud.com telemetry-ingestion.us-ashburn-1.oraclecloud.com management-agent.us-ashburn-1.oci.oraclecloud.com javamanagement-ingest.us-ashburn-1.oci.oraclecloud.com javamanagement.us-ashburn-1.oci.oraclecloud.com ingestion.logging.us-ashburn-1.oci.oraclecloud.com objectstorage.us-ashburn-1.oraclecloud.com
 
-Example Output:
+# Example Output:
 
 Unique IP's From DNS A Records
 ['129.213.0.145', '129.213.4.156', '134.70.24.1', '134.70.28.1', '134.70.32.1', '138.1.48.202', '140.91.11.142', '140.91.11.143', '140.91.11.144', '140.91.11.145', '140.91.11.146', '140.91.11.148', '140.91.11.62', '140.91.11.80', '140.91.11.81', '140.91.12.148', '140.91.12.149', '140.91.12.150', '140.91.12.151', '140.91.12.152', '140.91.12.154', '140.91.12.81', '140.91.12.98', '140.91.12.99', '140.91.15.120', '140.91.15.121', '140.91.15.122', '140.91.15.123', '140.91.15.124', '140.91.15.125', '140.91.15.59', '140.91.15.75', '140.91.15.77', '147.154.13.111', '147.154.25.141', '147.154.7.99']
