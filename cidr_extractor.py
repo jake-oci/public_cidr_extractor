@@ -59,6 +59,7 @@ if response.status_code == 200:
 else:
     print(f'Error retrieving JSON file: {response.status_code}')
 
+# Parse through the JSON and find matching CIDR blocks. Searches through all of the regions, just in case.
 cidr_blocks=[]
 regions_in_json=[]
 for ip_addr in unique_ip_list:
@@ -72,11 +73,13 @@ for ip_addr in unique_ip_list:
                 cidr_found=("{}").format(c['cidr'])
                 cidr_blocks.append(cidr_found)
 
+#Find the unique CIDR Blocks
 unique_cidr_blocks=[]
 for x in cidr_blocks:
     if x not in unique_cidr_blocks:
         unique_cidr_blocks.append(x)
-    
+
+#Find the unique Regions
 unique_regions=[]
 for x in regions_in_json:
     if x not in unique_regions:
