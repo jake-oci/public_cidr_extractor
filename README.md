@@ -2,7 +2,7 @@
 
 
 ### cidr_extractor.py
-If you want to get a general understanding of what CIDR ranges are being used for a specific OCI service using the Oracle Service Network, this is the script that will do it. Most of the output from the script is so you understand what is being run. The ***Unique CIDR BLOCKS matched with OCI JSON file*** output at the end of the file is the data you are most likely interested in if you it's absolutely necessary to filter the public CIDR asvertisements from the OCI Service Gateway. 
+If you want to get a general understanding of what CIDR ranges are being used for a specific OCI service using the Oracle Service Network, this is the script that will do it. Most of the output from the script is shown on the terminal so you understand what is being run. The ***Unique CIDR BLOCKS matched with OCI JSON file*** output at the end of the file is the data you are most likely interested in if it's absolutely necessary to filter the public CIDR asvertisements from the OCI Service Gateway. 
 
 
 ### Usage:
