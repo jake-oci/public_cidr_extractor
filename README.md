@@ -13,7 +13,7 @@ If you want to get a general understanding of what CIDR ranges are being used fo
 ### What does the script do?
 *Downloads the latest OCI CIDR JSON file. https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json
 
-*Runs 50 DNS queries for each DNS name specified, and collects the IP address.
+*Runs 100 DNS queries for each DNS name specified, and collects the IP address.
 
 *Compares the IP addresses it collected with the CIDR ranges in the JSON file
 
