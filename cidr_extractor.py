@@ -15,12 +15,12 @@ args=CLI.parse_args()
 hostname_list=[]
 hostname_list=args.list
 
-#Return A Record 50 Times. Run a new DNS query every time to avoid cache lookups.
+#Return A Record 100 Times. Run a new DNS query every time to avoid cache lookups.
 list=[]
 for hostname in hostname_list:
     count=0
     print(hostname)
-    while count<50:
+    while count<100:
         resolver=dns.resolver.Resolver(configure=False)
         resolver.nameservers = ['1.1.1.1','8.8.8.8']
         answer=resolver.resolve(hostname, 'a')
