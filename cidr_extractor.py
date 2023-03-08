@@ -26,8 +26,9 @@ for hostname in hostname_list:
         answer=resolver.resolve(hostname, 'a')
         for ipval in answer:
             ipaddr=(ipval.to_text())
-            print("HOSTNAME - {} IP ADDRESS - {}".format(hostname,ipaddr))
             list.append(ipaddr)
+            if list.count(ipaddr) == 1:
+                print("New IP Found- {}".format(ipaddr))
         count=count+1
 
 #Iterate Through List of IPs, and return Unique IPs
