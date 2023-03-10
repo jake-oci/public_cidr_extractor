@@ -64,6 +64,8 @@ objectstorage.us-ashburn-1.oraclecloud.com
 
 \[3\]\['134.70.24.1', '134.70.28.1', '134.70.32.1'\]
 
+
+
 **********OCI SPECIFIC INFORMATION**********
 
 OCI REGIONS
