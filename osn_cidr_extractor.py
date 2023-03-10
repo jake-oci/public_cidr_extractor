@@ -17,20 +17,26 @@ hostname_list=args.list
 
 #Return A Record 100 Times. Run a new DNS query every time to avoid cache lookups.
 list=[]
+print("")
+print("[HOSTNAME IP MAPPINGS]")
 for hostname in hostname_list:
-    count=0
-    print(hostname)
-    while count<100:
+    count=int(0)
+    ip_list=[]
+    if count<int(100):
         resolver=dns.resolver.Resolver(configure=False)
         resolver.nameservers = ['1.1.1.1','8.8.8.8']
         answer=resolver.resolve(hostname, 'a')
         for ipval in answer:
+            unique_list_counter=[]
             ipaddr=(ipval.to_text())
             list.append(ipaddr)
-            if list.count(ipaddr) == 1:
-                print("New IP Found- {}".format(ipaddr))
-        count=count+1
-
+            ip_list.append(ipaddr)
+            unique_list_counter.append(ipaddr)
+            count=count+1
+    print(hostname)
+    print("[{}]{}".format(len(ip_list),sorted(ip_list)))
+    print("")
+        
 #Iterate Through List of IPs, and return Unique IPs
 unique_ip_list=[]
 for x in list:
@@ -54,16 +60,18 @@ else:
 cidr_blocks=[]
 regions_in_json=[]
 for ip_addr in unique_ip_list:
+    match=None
     for region in cidrs:
         for c in region['cidrs']:
             if ipaddress.ip_address(ip_addr) in ipaddress.ip_network(c['cidr']):
-                #cidr_found=("{}-{}").format(region['region'], c['cidr'])
-                #Uncomment this line if you want to see the region for each prefix.
                 region_found=(region['region'])
                 regions_in_json.append(region_found)
                 cidr_found=("{}").format(c['cidr'])
                 cidr_blocks.append(cidr_found)
-
+                match=True
+    if match is None:
+        print("ERROR: {} does not belong to an OCI CIDR range. Script will not continue".format(hostname))
+        raise SystemExit
 unique_cidr_blocks=[]
 for x in cidr_blocks:
     if x not in unique_cidr_blocks:
@@ -74,12 +82,9 @@ for x in regions_in_json:
     if x not in unique_regions:
         unique_regions.append(x)
 
+print("**********OCI SPECIFIC INFORMATION**********")
+print("OCI REGIONS")
+print("[{}]{}".format(len(unique_regions),unique_regions))
 print("")
-print("Unique IP's From DNS A Records -- {}".format(len(unique_ip_list)))
-print(sorted(unique_ip_list))
-print("")
-print("CIDRs are from the following OCI Regions -- {}".format(len(unique_regions)))
-print(unique_regions)
-print("")
-print("Unique CIDR BLOCKS matched with OCI JSON file -- {}".format(len(unique_cidr_blocks)))
-print(sorted(unique_cidr_blocks))
+print("OCI CIDR MATCHES")
+print("[{}]{}".format(len(unique_cidr_blocks),unique_cidr_blocks))
