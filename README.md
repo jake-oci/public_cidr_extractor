@@ -49,20 +49,27 @@ management-agent.us-ashburn-1.oci.oraclecloud.com
 \[1\]\['147.154.13.111'\]
 
 javamanagement-ingest.us-ashburn-1.oci.oraclecloud.com
+
 \[1\]\['147.154.13.111'\]
 
 javamanagement.us-ashburn-1.oci.oraclecloud.com
+
 \[1\]\['147.154.13.111'\]
 
 ingestion.logging.us-ashburn-1.oci.oraclecloud.com
+
 \[3\]\['138.1.48.202', '147.154.25.141', '147.154.7.99'\]
 
 objectstorage.us-ashburn-1.oraclecloud.com
+
 \[3\]\['134.70.24.1', '134.70.28.1', '134.70.32.1'\]
 
 **********OCI SPECIFIC INFORMATION**********
+
 OCI REGIONS
+
 \[1\]\['us-ashburn-1'\]
 
 OCI CIDR MATCHES
+
 \[7\]\['129.213.2.128/25', '140.91.10.0/23', '140.91.12.0/22', '147.154.0.0/19', '138.1.48.0/21', '134.70.24.0/21', '134.70.32.0/22'\]
