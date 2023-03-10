@@ -2,12 +2,11 @@
 
 # osn\_cidr\_extractor.py
 
-**Description:** Associates IP addresses with OCI CIDRs for specific OCI SaaS Services. This narrows the scope of public IP addresses to test OCI services. 
+**Description:** Associates IP addresses with OCI CIDRs for specific OCI SaaS Services. This narrows the scope of public IP addresses to test OCI services.
 
 **General Use Case:** Allows firewall and network administrators to create more precise firewall and route filtering for OCI Proof of Concepts where restrictions are necessary on routes advertised from the Service Gateway over FastConnect.
 
 **WARNING:** These IP's can change at any time. The output from this script is not recommended to be used for a production environment due to the dynamic nature of DNS names.
-
 
 # What does the script actually do?
 
@@ -19,24 +18,21 @@
 
 # Usage:
 
-**python3 osn_cidr\_extractor.py --list OCI\_DNS\_NAME\_1 OCI\_DNS\_NAME\_2 OCI\_DNS\_NAME\_3**
+**python3 osn\_cidr\_extractor.py --list OCI\_DNS\_NAME\_1 OCI\_DNS\_NAME\_2 OCI\_DNS\_NAME_3**
 
 ### Example Usage for JMS Services in Ashburn:
 
-python3 osn_cidr_extractor.py --list auth.us-ashburn-1.oraclecloud.com telemetry-ingestion.us-ashburn-1.oraclecloud.com management-agent.us-ashburn-1.oci.oraclecloud.com javamanagement-ingest.us-ashburn-1.oci.oraclecloud.com javamanagement.us-ashburn-1.oci.oraclecloud.com ingestion.logging.us-ashburn-1.oci.oraclecloud.com objectstorage.us-ashburn-1.oraclecloud.com
-
+python3 osn\_cidr\_extractor.py --list auth.us-ashburn-1.oraclecloud.com telemetry-ingestion.us-ashburn-1.oraclecloud.com management-agent.us-ashburn-1.oci.oraclecloud.com javamanagement-ingest.us-ashburn-1.oci.oraclecloud.com javamanagement.us-ashburn-1.oci.oraclecloud.com ingestion.logging.us-ashburn-1.oci.oraclecloud.com objectstorage.us-ashburn-1.oraclecloud.com
 
 # Parsing the Output
 
-There are 3 pieces of data you will see
-
 **\[HOSTNAME IP MAPPINGS\] ->** Displays the unique IP addresses of each hostname based on the 100 DNS requests.
 
-**OCI REGIONS ->** Displays which region your IP blocks are associated with. 
+**OCI REGIONS ->** Displays which region your IP blocks are associated with.
 
 **OCI CIDR MATCHES ->** Iterates through the OCI JSON file, and finds which OCI CIDR blocks the DNS names are associated with.
 
-**Example Output for JMS Services in Ashburn**
+# **Example Output for JMS Services in Ashburn**
 
 \[HOSTNAME IP MAPPINGS\]
 
