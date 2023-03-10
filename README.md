@@ -26,6 +26,7 @@ python3 cidr_extractor.py --list auth.us-ashburn-1.oraclecloud.com telemetry-ing
 ### Example Output:
 
 [HOSTNAME IP MAPPINGS]
+
 auth.us-ashburn-1.oraclecloud.com
 [1]['129.213.2.151']
 
