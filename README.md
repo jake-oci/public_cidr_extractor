@@ -34,43 +34,5 @@ python3 osn\_cidr\_extractor.py --list auth.us-ashburn-1.oraclecloud.com telemet
 
 # **Example Output for JMS Services in Ashburn**
 
-**\[HOSTNAME IP MAPPINGS\]**
+![image](https://user-images.githubusercontent.com/126630123/224348444-f4e0c255-c5f7-4155-8a50-027304ee3f07.png)
 
-auth.us-ashburn-1.oraclecloud.com
-
-\[1\]\['129.213.2.151'\]
-
-telemetry-ingestion.us-ashburn-1.oraclecloud.com
-
-\[13\]\['140.91.11.145', '140.91.11.146', '140.91.11.62', '140.91.11.80', '140.91.12.148', '140.91.12.149', '140.91.12.150', '140.91.12.152', '140.91.12.154', '140.91.12.81', '140.91.15.120', '140.91.15.122', '140.91.15.125'\]
-
-management-agent.us-ashburn-1.oci.oraclecloud.com
-
-\[1\]\['147.154.13.111'\]
-
-javamanagement-ingest.us-ashburn-1.oci.oraclecloud.com
-
-\[1\]\['147.154.13.111'\]
-
-javamanagement.us-ashburn-1.oci.oraclecloud.com
-
-\[1\]\['147.154.13.111'\]
-
-ingestion.logging.us-ashburn-1.oci.oraclecloud.com
-
-\[3\]\['138.1.48.202', '147.154.25.141', '147.154.7.99'\]
-
-objectstorage.us-ashburn-1.oraclecloud.com
-
-\[3\]\['134.70.24.1', '134.70.28.1', '134.70.32.1'\]
-
-\
-**********OCI SPECIFIC INFORMATION**********
-
-**OCI REGIONS**
-
-\[1\]\['us-ashburn-1'\]
-
-**OCI CIDR MATCHES**
-
-\[7\]\['129.213.2.128/25', '140.91.10.0/23', '140.91.12.0/22', '147.154.0.0/19', '138.1.48.0/21', '134.70.24.0/21', '134.70.32.0/22'\]
