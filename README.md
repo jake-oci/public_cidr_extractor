@@ -18,11 +18,11 @@
 
 # Usage:
 
-**#python3 osn_cidr\_extractor.py --list OCI\_DNS\_NAME\_1 OCI\_DNS\_NAME\_2 OCI\_DNS\_NAME\_3**
+**python3 osn_cidr\_extractor.py --list OCI\_DNS\_NAME\_1 OCI\_DNS\_NAME\_2 OCI\_DNS\_NAME\_3**
 
 ### Example Usage for JMS Services in Ashburn:
 
-python3 cidr_extractor.py --list auth.us-ashburn-1.oraclecloud.com telemetry-ingestion.us-ashburn-1.oraclecloud.com management-agent.us-ashburn-1.oci.oraclecloud.com javamanagement-ingest.us-ashburn-1.oci.oraclecloud.com javamanagement.us-ashburn-1.oci.oraclecloud.com ingestion.logging.us-ashburn-1.oci.oraclecloud.com objectstorage.us-ashburn-1.oraclecloud.com
+python3 osn_cidr_extractor.py --list auth.us-ashburn-1.oraclecloud.com telemetry-ingestion.us-ashburn-1.oraclecloud.com management-agent.us-ashburn-1.oci.oraclecloud.com javamanagement-ingest.us-ashburn-1.oci.oraclecloud.com javamanagement.us-ashburn-1.oci.oraclecloud.com ingestion.logging.us-ashburn-1.oci.oraclecloud.com objectstorage.us-ashburn-1.oraclecloud.com
 
 
 # Parsing the Output
