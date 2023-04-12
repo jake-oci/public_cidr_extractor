@@ -8,6 +8,8 @@
 
 **WARNING:** These IP's can change at any time. The output from this script is not recommended to be used for a production environment due to the dynamic nature of DNS names.
 
+**WARNING2:** Other OCI services may share the same public CIDRs as the service you are trying to look up. There may be unintended consequences of this script if you only allow traffic from a single SaaS service and multiple SaaS services are in use.
+
 # What does the script actually do?
 
 *Downloads the latest OCI CIDR JSON file. [https://docs.oracle.com/en-us/iaas/tools/public\_ip\_ranges.json](https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json)
